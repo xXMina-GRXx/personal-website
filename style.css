@@ -8,6 +8,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
+    min-width: 400px;
     /* background-color: rgba(0, 0, 0, 0.5); */
 }
 header{
@@ -120,9 +121,11 @@ h3{
 }
 
 .container-1 {
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: auto auto auto auto auto auto;
+  /* width: 100%; */
+  display:flex;
+  /* column-gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto; */
+  flex-wrap: wrap;
   padding: 10px;
   padding-bottom: 30px;
 }
@@ -132,8 +135,11 @@ h3{
   /* border: 1px solid ; */
   border-radius:15px ;
   color: black;
+  margin: 5px 5px;
   padding: 10px;
   text-align: center;
+  width: 70px;
+  /* display: block; */
   
 }
 
@@ -154,6 +160,7 @@ h3{
   /*border: 1px solid ;*/
   border-radius:15px ;
   /*color: white;*/
+  justify-content: space-between;
   margin-top: 20px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -171,14 +178,12 @@ button{
     /* background: linear-gradient(144deg,rgba(1, 51, 74, 1) 13%, rgba(40, 153, 181, 1) 86%); */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 28px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 50px;
-    position: relative;
-    display: inline;
+
     bottom: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -240,7 +245,7 @@ form{
 
 footer{
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
     background-color: black;
     border-top: 2px solid #3E3636;
@@ -362,7 +367,7 @@ p{
   
   /* Full-width containers */
   .container {
-  width: 80%;
+  width: 70%;
   padding-left: 70px;
   padding-right: 25px;
   }
@@ -397,20 +402,30 @@ p{
   .sec{
     width: 90%;
   }
+  nav h1{
+    font-size: 18px;
+  }
   li{
     padding: 0 7px;
   }
-  .container-1 {
+  /* .container-1 {
   display: grid;
   column-gap: 20px;
   row-gap: 20px;
   grid-template-columns: auto auto auto auto ;
-  }
+  } */
 #futdev{
   width: 80%;
   }
 .container-2{
   grid-template-columns: auto auto;
+}
+a{
+  font-size: 12px;
+}
+#contact textarea,input{
+  width: 90%;
+  
 }
 
 }
